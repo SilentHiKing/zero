@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_test"
+    android:id="@+id/nav_graph_home"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/navigation_test"
+        android:name="com.hiking.zero.test.TestFragment"
+        android:label="test"
+        tools:layout="@layout/fragment_test" />
+    <fragment
+        android:id="@+id/navigation_music"
+        android:name="com.hiking.zero.music.MusicFragment"
+        android:label="google"
+        tools:layout="@layout/fragment_music" />
+
+    <fragment
+        android:id="@+id/navigation_github"
+        android:name="com.hiking.zero.github.GithubFragment"
+        android:label="github"
+        tools:layout="@layout/fragment_github" />
+
+
+
+</navigation>

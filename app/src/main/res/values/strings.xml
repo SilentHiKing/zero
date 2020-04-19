@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">zero</string>
+    <string name="bottom_zero">测试</string>
+    <string name="bottom_test">测试</string>
+    <string name="bottom_music">音乐</string>
+    <string name="bottom_github">Github</string>
+</resources>
