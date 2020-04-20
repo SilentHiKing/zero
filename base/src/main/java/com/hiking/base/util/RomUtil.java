@@ -1,4 +1,4 @@
-package com.hiking.zero.util;
+package com.hiking.base.util;
 
 import android.os.Build;
 import android.os.Environment;

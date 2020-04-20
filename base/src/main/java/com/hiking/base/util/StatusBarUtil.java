@@ -1,4 +1,4 @@
-package com.hiking.zero.util;
+package com.hiking.base.util;
 
 import android.app.Activity;
 import android.content.Context;

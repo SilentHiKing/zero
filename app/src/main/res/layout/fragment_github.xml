@@ -11,4 +11,15 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <CheckBox
+        android:layout_marginTop="50dp"
+        android:gravity="left|top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="你哈弗缴费基数覅健身房健身房is交付时间方式开飞机撒发你哈弗缴费基数覅健身房健身房is交付时间方式开飞机撒发你哈弗缴费基数覅健身房健身房is交付时间方式开飞机撒发你哈弗缴费基数覅健身房健身房is交付时间方式开飞机撒发你哈弗缴费基数覅健身房健身房is交付时间方式开飞机撒发"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/bg_checkbox_selector"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

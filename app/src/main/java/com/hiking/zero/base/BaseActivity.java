@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hiking.zero.R;
-import com.hiking.zero.util.StatusBarUtil;
+import com.hiking.base.util.StatusBarUtil;
 
 public class BaseActivity extends AppCompatActivity {
     @Override
