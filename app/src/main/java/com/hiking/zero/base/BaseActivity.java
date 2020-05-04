@@ -41,7 +41,7 @@ public class BaseActivity extends AppCompatActivity {
      * 更改状态栏颜色，只有非全屏模式下有效
      */
     protected int getStatusBarColor() {
-        return R.color.white;
+        return R.color.tab_background;
     }
 
     /**

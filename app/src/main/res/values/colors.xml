@@ -11,4 +11,7 @@
     <color name="azure">#49A9DF</color>
     <color name="cerulean_blue">#137AE2</color>
     <color name="brown">#643A07</color>
+
+    <color name="primary_light_alpha50">#7FCFD8DC</color>
+    <color name="tab_background">#607D8B</color>
 </resources>

@@ -14,4 +14,9 @@
 
     </style>
 
+    <style name="RecyclerTabLayoutTheme">
+        <item name="android:textColorSecondary">@color/primary_light_alpha50</item>
+    </style>
+
+
 </resources>
