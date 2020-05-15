@@ -4,8 +4,8 @@
                 "hex": "#5d8aa8",
                 "rgb": [93, 138, 168]
         },
-        "amber": {
-                "name": "Amber",
+        "PopupWindow": {
+                "name": "PopupWindow",
                 "hex": "#ffbf00",
                 "rgb": [255, 191, 0]
         },

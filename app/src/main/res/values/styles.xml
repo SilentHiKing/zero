@@ -18,5 +18,10 @@
         <item name="android:textColorSecondary">@color/primary_light_alpha50</item>
     </style>
 
+    <style name="Popupwindow" parent="android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/set_enter_default</item>
+        <item name="android:windowExitAnimation">@anim/set_exit_default</item>
+    </style>
+
 
 </resources>

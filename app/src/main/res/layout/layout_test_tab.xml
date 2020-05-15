@@ -1,13 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <com.hiking.base.view.FloatLayout
         android:layout_gravity="center"
-        android:textSize="24sp" />
+        android:layout_width="match_parent"
+        app:childHorizontalSpacing="@dimen/dimen_20dp"
+        app:childVerticalSpacing="@dimen/dimen_10dp"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="@dimen/dimen_5dp"
+            android:id="@+id/title"
+            android:background="@color/brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/title_two"
+            android:padding="@dimen/dimen_5dp"
+            android:background="@color/azure"
+            android:layout_width="wrap_content"
+            android:text="你好吗，我很好呀"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/title_three"
+            android:padding="@dimen/dimen_5dp"
+            android:background="@color/azure"
+            android:layout_width="wrap_content"
+            android:text="我在这里等着你回来"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24sp" />
+
+    </com.hiking.base.view.FloatLayout>
+
+
 
 </FrameLayout>

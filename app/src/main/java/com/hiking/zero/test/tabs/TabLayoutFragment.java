@@ -32,15 +32,15 @@ public class TabLayoutFragment extends BaseFragment {
     public void initView(View v) {
         super.initView(v);
         List<ColorItem> items = DemoData.loadDemoColorItems(getContext());
-        Collections.sort(items, new Comparator<ColorItem>() {
+        /*Collections.sort(items, new Comparator<ColorItem>() {
             @Override
             public int compare(ColorItem lhs, ColorItem rhs) {
                 return lhs.name.compareTo(rhs.name);
             }
-        });
+        });*/
 
-        DemoColorPagerAdapter viewPagerAdapter = new DemoColorPagerAdapter();
-        viewPagerAdapter.addAll(items);
+        BaseFragmentStatePagerAdapter viewPagerAdapter =
+                new BaseFragmentStatePagerAdapter(getChildFragmentManager(), items);
         vp_view_pager.setAdapter(viewPagerAdapter);
         DemoCustomView01Adapter adapter = new DemoCustomView01Adapter(vp_view_pager);
         rtl_tabs.setUpWithAdapter(adapter);

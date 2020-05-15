@@ -17,11 +17,11 @@ import com.hiking.zero.test.data.ColorItem;
 
 public class DemoCustomView01Adapter extends RecyclerTabLayout.Adapter<DemoCustomView01Adapter.ViewHolder> {
 
-    private DemoColorPagerAdapter mAdapater;
+    private BaseFragmentStatePagerAdapter mAdapater;
 
     public DemoCustomView01Adapter(ViewPager viewPager) {
         super(viewPager);
-        mAdapater = (DemoColorPagerAdapter) mViewPager.getAdapter();
+        mAdapater = (BaseFragmentStatePagerAdapter) mViewPager.getAdapter();
     }
 
     @Override
