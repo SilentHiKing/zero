@@ -5,6 +5,8 @@
     <string name="bottom_music">音乐</string>
     <string name="bottom_github">Github</string>
 
+    <string name="behavior_sample_title">com.hiking.zero.test.behavior.SampleTitleBehavior</string>
+
 
     <string name="large_text">
         "Material is the metaphor.\n\n"

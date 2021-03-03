@@ -1,6 +1,8 @@
 package com.hiking.zero.test;
 
+import android.graphics.Color;
 import android.graphics.Rect;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -56,9 +58,14 @@ public class PopupWindowFragment extends BaseFragment {
         final PopupWindow popupWindow = new PopupWindow(textView,
                 FrameLayout.MarginLayoutParams.WRAP_CONTENT, FrameLayout.MarginLayoutParams.WRAP_CONTENT);
         popupWindow.setAnimationStyle(R.style.Popupwindow);
+        //点击外部消失
+        popupWindow.setOutsideTouchable(true);
+        popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         popupWindow.setClippingEnabled(true);
-        popupWindow.setOutsideTouchable(false);
-        popupWindow.setFocusable(true);
+        //设置可以点击
+        popupWindow.setTouchable(true);
+        //可响应外部点击事件
+        popupWindow.setFocusable(false);
         popupWindow.showAsDropDown(title, 200, 0);
 
     }
@@ -66,6 +73,10 @@ public class PopupWindowFragment extends BaseFragment {
     @OnClick(R.id.title_two)
     public void clickTwo(View v) {
         ToastUtil.showToast("点击");
+    }
+    @OnClick(R.id.container)
+    public void clickContainer(View v) {
+        ToastUtil.showToast("点击container");
     }
 
     @Override

@@ -2,4 +2,7 @@
 <resources>
     <color name="white">#ffffff</color>
     <color name="color_cc333333">#cc333333</color>
+    <color name="color_7fffd4">#7fffd4</color>
+    <color name="color_e9967a">#e9967a</color>
+    <color name="color_dc143c">#dc143c</color>
 </resources>

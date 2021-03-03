@@ -9,8 +9,8 @@
                 "hex": "#ffbf00",
                 "rgb": [255, 191, 0]
         },
-        "amber_sae_ece": {
-                "name": "Amber (Sae/Ece)",
+        "AppBarLayout": {
+                "name": "AppBarLayout",
                 "hex": "#ff7e00",
                 "rgb": [255, 126, 0]
         },

@@ -17,4 +17,5 @@
         android:label="tab_layout"
         tools:layout="@layout/fragment_tab_layout" />
 
+
 </navigation>

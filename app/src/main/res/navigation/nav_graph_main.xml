@@ -9,6 +9,30 @@
         android:id="@+id/navigation_home"
         android:name="com.hiking.zero.home.HomeFragment"
         android:label="navigation_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_home_to_move"
+            app:destination="@id/navigation_move" />
+
+        <action
+            android:id="@+id/action_home_to_type_one"
+            app:destination="@id/navigation_type_one" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_move"
+        android:name="com.hiking.zero.temp.MoveFragment"
+        android:label="navigation_move"
+        tools:layout="@layout/fragment_move"
+        />
+
+    <fragment
+        android:id="@+id/navigation_type_one"
+        android:name="com.hiking.zero.temp.typeone.TypeOneFragment"
+        android:label="navigation_type_one"
+        tools:layout="@layout/fragment_type_one"
+        />
 
 </navigation>
