@@ -58,7 +58,7 @@ public class TypeOneFragment extends BaseFragment {
             }
         });
 
-        MediaPagerAdapter adapter = new MediaPagerAdapter();
+        MediaStatePagerAdapter adapter = new MediaStatePagerAdapter(getChildFragmentManager());
 
         adapter.setData(Arrays.asList(mTabTitle));
         vp_pager.setAdapter(adapter);

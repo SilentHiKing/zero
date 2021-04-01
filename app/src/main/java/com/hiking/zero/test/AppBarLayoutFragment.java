@@ -59,6 +59,9 @@ public class AppBarLayoutFragment extends BaseFragment {
                     case 1:
                         mNavController.navigate(R.id.action_home_to_type_one);
                         break;
+                    case 2:
+                        mNavController.navigate(R.id.action_home_to_nested_one);
+                        break;
                     default:
                         break;
                 }

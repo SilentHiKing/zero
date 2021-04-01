@@ -35,4 +35,10 @@ public abstract class BaseAdapter<T, VH extends RecyclerView.ViewHolder> extends
     public boolean hasData() {
         return mData != null && mData.size() > 0;
     }
+
+    @Override
+    public int getItemCount() {
+        return hasData() ? mData.size() : 0;
+
+    }
 }

@@ -31,4 +31,7 @@
         <attr name="android:maxLines" />
         <attr name="maxNumber" format="integer" />
     </declare-styleable>
+    <declare-styleable name="CornerLayout_Layout">
+        <attr name="layout_corner" format="integer" />
+    </declare-styleable>
 </resources>

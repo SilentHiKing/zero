@@ -4,7 +4,7 @@
     <string-array name="click_title">
         <item>推荐</item>
         <item>视频</item>
-        <item>热点</item>
+        <item>nested_one</item>
         <item>社会</item>
         <item>娱乐</item>
         <item>科技</item>

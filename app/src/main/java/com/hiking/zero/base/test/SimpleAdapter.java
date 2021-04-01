@@ -26,9 +26,5 @@ public class SimpleAdapter extends BaseAdapter<String, SimpleViewHolder> {
         holder.bindData(mData.get(position), position, mOnItemClickListener);
     }
 
-    @Override
-    public int getItemCount() {
-        return hasData() ? mData.size() : 0;
 
-    }
 }
