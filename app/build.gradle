@@ -1,5 +1,9 @@
-apply plugin: 'com.android.application'
 //apply plugin: 'com.jakewharton.butterknife'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
 
 android {
     compileSdkVersion build_versions.compile_sdk
@@ -37,6 +41,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    implementation deps.core_ktx
+    implementation deps.kotlin_stdlib
     implementation deps.x_appcompat
     implementation deps.constraint_layout
     implementation deps.navigation_fragment
@@ -44,7 +50,7 @@ dependencies {
     implementation deps.material
     implementation deps.butterknife
     annotationProcessor  deps.butterknife_compiler
-    implementation 'com.google.android.exoplayer:exoplayer:2.10.0'
+    implementation deps.exoplayer
     implementation 'com.wx.goodview:goodview:1.0.0'
 
     testImplementation 'junit:junit:4.12'

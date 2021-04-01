@@ -16,8 +16,12 @@ public class NestedOneFragment extends BaseFragment<FragmentNestedOneBinding> {
     @Override
     public void initView(View v) {
         super.initView(v);
-        /*mViewBinding.npvVew;
-        mViewBinding.ncvVew;*/
+        mViewBinding.npvVew.post(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
 
     }
 
