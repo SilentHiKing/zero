@@ -28,7 +28,6 @@ android {
 }
 
 
-
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation deps.core_ktx
@@ -37,6 +36,14 @@ dependencies {
     implementation deps.butterknife
     implementation deps.material
     annotationProcessor deps.butterknife_compiler
+    implementation (deps.glide_okhttp_integration){
+        transitive = true
+    }
+    implementation deps.glide
+    annotationProcessor deps.glide_compiler
+    implementation deps.okhttp3
+    implementation deps.okhttp3_logging_interceptor
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

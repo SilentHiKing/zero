@@ -13,6 +13,8 @@ import com.hiking.base.recycle_view.OnItemClickListener;
 import com.hiking.zero.R;
 import com.hiking.zero.base.BaseFragment;
 import com.hiking.zero.base.test.SimpleAdapter;
+import com.hiking.zero.flutter.Test1Activity;
+import com.hiking.zero.flutter.TestFlutter1Activity;
 import com.hiking.zero.test.data.ColorItem;
 
 import java.util.Arrays;
@@ -61,6 +63,12 @@ public class AppBarLayoutFragment extends BaseFragment {
                         break;
                     case 2:
                         mNavController.navigate(R.id.action_home_to_nested_one);
+                        break;
+                    case 3:
+                        TestFlutter1Activity.Companion.start(getContext());
+                        break;
+                    case 4:
+                        Test1Activity.intentFor(getContext());
                         break;
                     default:
                         break;

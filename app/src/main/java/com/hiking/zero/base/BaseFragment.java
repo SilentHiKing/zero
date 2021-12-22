@@ -20,7 +20,7 @@ import butterknife.ButterKnife;
 public abstract class BaseFragment<T extends ViewBinding> extends Fragment {
     protected View mRootView;
     public static final String POSITION = "POSITION";
-    protected T mViewBinding;
+    protected T vb;
 
     @Nullable
     @Override
@@ -42,11 +42,11 @@ public abstract class BaseFragment<T extends ViewBinding> extends Fragment {
             Class cls = (Class) type.getActualTypeArguments()[0];
             try {
                 Method inflate = cls.getDeclaredMethod("inflate", LayoutInflater.class, ViewGroup.class, boolean.class);
-                mViewBinding = (T) inflate.invoke(null, inflater, container, false);
+                vb = (T) inflate.invoke(null, inflater, container, false);
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            mRootView = mViewBinding.getRoot();
+            mRootView = vb.getRoot();
         } else {
             mRootView = inflater.inflate(getLayoutRes(), container, false);
         }
@@ -72,6 +72,6 @@ public abstract class BaseFragment<T extends ViewBinding> extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        mViewBinding = null;
+        vb = null;
     }
 }

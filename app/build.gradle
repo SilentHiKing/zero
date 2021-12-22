@@ -17,6 +17,11 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            // Filter for architectures supported by Flutter.
+            abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+        }
     }
 
     buildTypes {
@@ -36,6 +41,13 @@ android {
         enabled = true
     }
 
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+//        maven { url 'https://jitpack.io' }
+    }
+
 }
 
 dependencies {
@@ -51,10 +63,20 @@ dependencies {
     implementation deps.butterknife
     annotationProcessor  deps.butterknife_compiler
     implementation deps.exoplayer
+    implementation deps.fastjson
     implementation 'com.wx.goodview:goodview:1.0.0'
+//    implementation 'com.jdddongjia.wealthapp.bm:debug:1.9.0_wealth-20210709.093341-SNAPSHOT'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':base')
+
+
+    implementation(name: 'flutter_debug-1.0', ext: 'aar')
+
+    implementation 'io.flutter:flutter_embedding_release:1.0.0-d3ea636dc5d16b56819f3266241e1f708979c233'
+    implementation 'io.flutter:armeabi_v7a_release:1.0.0-d3ea636dc5d16b56819f3266241e1f708979c233'
+    implementation 'io.flutter:arm64_v8a_release:1.0.0-d3ea636dc5d16b56819f3266241e1f708979c233'
+    implementation 'io.flutter:x86_64_release:1.0.0-d3ea636dc5d16b56819f3266241e1f708979c233'
 }

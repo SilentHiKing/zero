@@ -41,6 +41,6 @@
         android:id="@+id/navigation_nested_one"
         android:name="com.hiking.zero.temp.typeone.NestedOneFragment"
         android:label="navigation_nested_one"
-        tools:layout="@layout/fragment_nested_one" />
+        tools:layout="@layout/fragment_scroll_one" />
 
 </navigation>

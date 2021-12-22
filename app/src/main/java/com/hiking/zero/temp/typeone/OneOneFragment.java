@@ -31,7 +31,7 @@ public class OneOneFragment extends BaseFragment {
 
     @Override
     public int getLayoutRes() {
-        return R.layout.fragment_type_one_one;
+        return R.layout.fragment_scroll_one;
     }
 
     @Override

@@ -5,6 +5,12 @@ buildscript {
     apply from: 'version.gradle'
 
     repositories {
+        maven { url "http://nexus.cbpmgt.com/nexus/content/repositories/maven_google_com" }
+        maven { url "http://nexus.cbpmgt.com/nexus/content/repositories/jcenter_bintray" }
+        maven{ url 'http://nexus.cbpmgt.com/nexus/content/repositories/snapshots' }
+        maven {
+            url "http://download.flutter.io"
+        }
         maven { url 'https://maven.aliyun.com/repository/public/' }
         maven { url 'https://maven.aliyun.com/repository/google/' }
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
@@ -25,6 +31,13 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url "http://nexus.cbpmgt.com/nexus/content/repositories/maven_google_com" }
+        maven { url "http://nexus.cbpmgt.com/nexus/content/repositories/jcenter_bintray" }
+        maven{ url 'http://nexus.cbpmgt.com/nexus/content/repositories/snapshots' }
+        maven {
+            url "http://download.flutter.io"
+        }
+
         maven { url 'https://maven.aliyun.com/repository/public/' }
         maven { url 'https://maven.aliyun.com/repository/google/' }
         maven { url 'https://maven.aliyun.com/repository/gradle-plugin/' }
